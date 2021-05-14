@@ -18,6 +18,14 @@ hr {
   margin: 1rem 0.5rem;
 }
 
+.reset-link-styles,
+.reset-link-styles:hover,
+.reset-link-styles:visited,
+.reset-link-styles:link,
+.reset-link-styles:active {
+  text-decoration: none;
+}
+
 .my-1 {
   margin: 0rem 1rem;
 }
