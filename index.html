@@ -47,296 +47,346 @@
       </div>
     </div>
 
-    <div class="left-section"></div>
+    <div class="d-flex">
+      <div class="left-section">
+        <script>
+          listOfComponents = ["Button", "Card", "Alert", "Badge"];
 
-    <div class="right-section">
-      <button class="btn primary-btn">Click here</button>
+          let output = "<ul class='components-list'>";
 
-      <br />
+          listOfComponents.forEach((component) => {
+            output += `<li class='component-list-item heading-4'>${component}</li>`;
+          });
 
-      <button class="btn secondary-btn">Click here</button>
+          output += "</li>";
 
-      <hr />
-
-      <button class="btn secondary-btn">
-        <span class="btn__icon material-icons"> favorite </span>
-        Wishlist
-      </button>
-
-      <hr />
-
-      <button class="btn secondary-btn icon-only-btn icon-only-btn-sm">
-        <span class="icon material-icons"> favorite </span>
-      </button>
-
-      <hr />
-
-      <button class="btn secondary-btn icon-only-btn">
-        <span class="icon material-icons"> favorite </span>
-      </button>
-
-      <hr />
-
-      <button class="btn primary-btn icon-only-btn floating-action-btn">
-        <span class="icon material-icons"> add </span>
-      </button>
-
-      <hr />
-
-      <div class="alert success-alert">
-        <span class="alert__icon material-icons"> check_circle </span>
-        Success - check it out!
+          document.write(output);
+        </script>
       </div>
 
-      <br />
+      <div class="right-section">
+        <p class="heading-3 primary-txt-color bold"># Buttons</p>
+        <div class="component-container">
+          <p class="heading-4 my-1">- Buttons with text only</p>
 
-      <div class="alert danger-alert">
-        <span class="alert__icon material-icons"> error </span>
-        Error - check it out!
-      </div>
-
-      <hr />
-
-      <span class="badge primary-badge">24</span>
-      <span class="badge secondary-badge">24</span>
-      <p>New messages: <span class="badge primary-badge">24</span></p>
-
-      <hr />
-
-      <!-- <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="female" class="avatar"> -->
-
-      <hr />
-
-      <div class="avatar avatar-small">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="male" />
-      </div>
-
-      <div class="avatar avatar-large">
-        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="male" />
-      </div>
-      <br />
-
-      <div class="avatar">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="male" />
-        <span class="avatar__badge badge secondary-badge">24</span>
-      </div>
-
-      <hr />
-
-      <div class="icon-with-badge">
-        <span class="icon-with-badge__icon material-icons">
-          favorite_border
-        </span>
-        <span class="badge secondary-badge">24</span>
-      </div>
-
-      <hr />
-
-      <div class="icon-with-badge">
-        <span class="icon-with-badge__icon material-icons">
-          shopping_cart
-        </span>
-        <span class="badge secondary-badge">24</span>
-      </div>
-
-      <div class="icon-with-badge icon-with-badge-lg">
-        <span class="icon-with-badge__icon material-icons">
-          shopping_cart
-        </span>
-        <span class="badge secondary-badge">24</span>
-      </div>
-
-      <hr />
-
-      <form>
-        <div class="input-container">
-          <input class="input-container__input-field" type="text" />
-          <label class="input-container__heading">Name</label>
-
-          <span class="input-container__icon material-icons">
-            perm_identity
-          </span>
-        </div>
-
-        <div class="input-container">
-          <input class="input-container__input-field" type="text" />
-          <label class="input-container__heading">Password</label>
-        </div>
-      </form>
-
-      <hr />
-
-      <!-- <div class="list-of-shopping-cards"> -->
-
-      <div class="shopping-card">
-        <div class="shopping-card__img-container">
-          <img
-            class="shopping-card__img"
-            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
-          />
-        </div>
-
-        <div class="shopping-card__header">
-          <span class="discount">30% Off</span>
-          <span class="icon material-icons"> favorite_border </span>
-        </div>
-
-        <div class="shopping-card__description">
-          <p class="heading bold">HRX Printed Round Neck T-Shirt</p>
-          <p class="price">Rs. 499 <span class="striked-price">500</span></p>
-        </div>
-      </div>
-
-      <!-- </div> -->
-
-      <hr />
-
-      <div class="typography">
-        <p class="heading-1">Heading 1</p>
-        <p class="heading-2">Heading 2</p>
-        <p class="heading-3">Heading 3</p>
-        <p class="heading-4">Heading 4</p>
-        <p class="heading-5">Heading 4</p>
-        <p>Normal text</p>
-        <p class="small">Small text</p>
-      </div>
-
-      <hr />
-
-      <div class="basic-card basic-card-vertical">
-        <div class="basic-card__img-container">
-          <img
-            class="basic-card__img"
-            src="https://via.placeholder.com/800"
-            alt="img"
-          />
-        </div>
-
-        <div class="basic-card__body">
-          <div class="header">
-            <p class="heading-4">Heading</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="basic-card basic-card-horizontal">
-        <span class="basic-card__dismiss-icon material-icons"> clear </span>
-
-        <div class="basic-card__img-container">
-          <img
-            class="basic-card__img"
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-            alt="img"
-          />
-        </div>
-
-        <div class="basic-card__body">
-          <div class="header">
-            <p class="heading-4">Photo Frame</p>
-            <p class="heading-5">Rs. 3,999</p>
+          <div class="d-flex align-items-center col-gap-1 mh-1">
+            <button class="btn primary-btn">Primary button</button>
+            <button class="btn secondary-btn">Secondary Button</button>
           </div>
 
-          <div class="footer">
-            <button class="btn secondary-btn">
-              <span class="btn__icon material-icons"> favorite </span>
-              Add to cart
-            </button>
-          </div>
-        </div>
-      </div>
+          <p class="heading-4 my-1">- Buttons with icon and text</p>
 
-      <hr />
-
-      <div class="basic-card basic-card-vertical">
-        <span class="basic-card__dismiss-icon material-icons"> clear </span>
-
-        <div class="basic-card__img-container">
-          <img
-            class="basic-card__img"
-            src="https://via.placeholder.com/800"
-            alt="img"
-          />
-        </div>
-
-        <div class="basic-card__body">
-          <div class="header">
-            <p class="heading-4">Heading</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
-
-          <div class="footer">
-            <button class="btn secondary-btn">
+          <div class="d-flex align-items-center col-gap-1 mh-1">
+            <button class="btn primary-btn">
               <span class="btn__icon material-icons"> favorite </span>
               Wishlist
             </button>
-          </div>
-        </div>
-      </div>
 
-      <hr />
-
-      <div class="basic-shopping-card">
-        <img
-          class="basic-shopping-card__img"
-          src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
-        />
-
-        <div class="basic-shopping-card__header">
-          <span class="discount small">30% Off</span>
-          <span class="icon material-icons"> favorite_border </span>
-        </div>
-
-        <div class="basic-shopping-card__body">
-          <div class="header">
-            <p class="brand">Levis</p>
-            <p class="description">Mens yellow tshirt</p>
-            <p class="price">Rs. 400</p>
-          </div>
-
-          <div class="footer">
-            <button class="btn primary-btn">Add to cart</button>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="small-horizontal-card">
-        <img
-          class="small-horizontal-card__img"
-          src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
-        />
-
-        <div class="small-horizontal-card__body">
-          <div class="header">
-            <p class="brand">Levis</p>
-            <p class="description">Mens yellow tshirt</p>
-            <p class="price">Rs. 400</p>
-          </div>
-          <div class="footer">
-            <button class="btn secondary-btn icon-only-btn icon-only-btn-sm">
-              <span class="icon material-icons"> remove </span>
+            <button class="btn secondary-btn">
+              <span class="btn__icon material-icons"> shopping_cart </span>
+              Shopping Cart
             </button>
-            4
+          </div>
+
+          <p class="heading-4 my-1">- Buttons with icon only</p>
+
+          <div class="d-flex align-items-center col-gap-1 mh-1 my-1">
+            <button class="btn primary-btn icon-only-btn icon-only-btn-sm">
+              <span class="icon material-icons"> favorite </span>
+            </button>
+
             <button class="btn secondary-btn icon-only-btn icon-only-btn-sm">
+              <span class="icon material-icons"> favorite </span>
+            </button>
+          </div>
+
+          <div class="d-flex align-items-center col-gap-1 mh-1 my-1">
+            <button class="btn primary-btn icon-only-btn">
+              <span class="icon material-icons"> shopping_cart </span>
+            </button>
+
+            <button class="btn secondary-btn icon-only-btn">
+              <span class="icon material-icons"> favorite </span>
+            </button>
+
+            <button class="btn primary-btn icon-only-btn floating-action-btn">
               <span class="icon material-icons"> add </span>
             </button>
           </div>
         </div>
-      </div>
 
-      <br />
+        <hr />
+
+        <p class="heading-3 primary-txt-color bold my-1"># Alert</p>
+
+        <div class="component-container">
+          <p class="heading-4 my-1">- Success Alert</p>
+
+          <div class="alert success-alert">
+            <span class="alert__icon material-icons"> check_circle </span>
+            Success - check it out!
+          </div>
+
+          <p class="heading-4 my-1">- Failure Alert</p>
+
+          <div class="alert danger-alert">
+            <span class="alert__icon material-icons"> error </span>
+            Error - check it out!
+          </div>
+        </div>
+
+        <hr />
+
+        <span class="badge primary-badge">24</span>
+        <span class="badge secondary-badge">24</span>
+        <p>New messages: <span class="badge primary-badge">24</span></p>
+
+        <hr />
+
+        <!-- <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="female" class="avatar"> -->
+
+        <hr />
+
+        <div class="avatar avatar-small">
+          <img
+            src="https://www.w3schools.com/howto/img_avatar.png"
+            alt="male"
+          />
+        </div>
+
+        <div class="avatar avatar-large">
+          <img
+            src="https://www.w3schools.com/howto/img_avatar2.png"
+            alt="male"
+          />
+        </div>
+        <br />
+
+        <div class="avatar">
+          <img
+            src="https://www.w3schools.com/howto/img_avatar.png"
+            alt="male"
+          />
+          <span class="avatar__badge badge secondary-badge">24</span>
+        </div>
+
+        <hr />
+
+        <div class="icon-with-badge">
+          <span class="icon-with-badge__icon material-icons">
+            favorite_border
+          </span>
+          <span class="badge secondary-badge">24</span>
+        </div>
+
+        <hr />
+
+        <div class="icon-with-badge">
+          <span class="icon-with-badge__icon material-icons">
+            shopping_cart
+          </span>
+          <span class="badge secondary-badge">24</span>
+        </div>
+
+        <div class="icon-with-badge icon-with-badge-lg">
+          <span class="icon-with-badge__icon material-icons">
+            shopping_cart
+          </span>
+          <span class="badge secondary-badge">24</span>
+        </div>
+
+        <hr />
+
+        <form>
+          <div class="input-container">
+            <input class="input-container__input-field" type="text" />
+            <label class="input-container__heading">Name</label>
+
+            <span class="input-container__icon material-icons">
+              perm_identity
+            </span>
+          </div>
+
+          <div class="input-container">
+            <input class="input-container__input-field" type="text" />
+            <label class="input-container__heading">Password</label>
+          </div>
+        </form>
+
+        <hr />
+
+        <!-- <div class="list-of-shopping-cards"> -->
+
+        <div class="shopping-card">
+          <div class="shopping-card__img-container">
+            <img
+              class="shopping-card__img"
+              src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
+            />
+          </div>
+
+          <div class="shopping-card__header">
+            <span class="discount">30% Off</span>
+            <span class="icon material-icons"> favorite_border </span>
+          </div>
+
+          <div class="shopping-card__description">
+            <p class="heading bold">HRX Printed Round Neck T-Shirt</p>
+            <p class="price">Rs. 499 <span class="striked-price">500</span></p>
+          </div>
+        </div>
+
+        <!-- </div> -->
+
+        <hr />
+
+        <div class="typography">
+          <p class="heading-1">Heading 1</p>
+          <p class="heading-2">Heading 2</p>
+          <p class="heading-3">Heading 3</p>
+          <p class="heading-4">Heading 4</p>
+          <p class="heading-5">Heading 4</p>
+          <p>Normal text</p>
+          <p class="small">Small text</p>
+        </div>
+
+        <hr />
+
+        <div class="basic-card basic-card-vertical">
+          <div class="basic-card__img-container">
+            <img
+              class="basic-card__img"
+              src="https://via.placeholder.com/800"
+              alt="img"
+            />
+          </div>
+
+          <div class="basic-card__body">
+            <div class="header">
+              <p class="heading-4">Heading</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="basic-card basic-card-horizontal">
+          <span class="basic-card__dismiss-icon material-icons"> clear </span>
+
+          <div class="basic-card__img-container">
+            <img
+              class="basic-card__img"
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="img"
+            />
+          </div>
+
+          <div class="basic-card__body">
+            <div class="header">
+              <p class="heading-4">Photo Frame</p>
+              <p class="heading-5">Rs. 3,999</p>
+            </div>
+
+            <div class="footer">
+              <button class="btn secondary-btn">
+                <span class="btn__icon material-icons"> favorite </span>
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="basic-card basic-card-vertical">
+          <span class="basic-card__dismiss-icon material-icons"> clear </span>
+
+          <div class="basic-card__img-container">
+            <img
+              class="basic-card__img"
+              src="https://via.placeholder.com/800"
+              alt="img"
+            />
+          </div>
+
+          <div class="basic-card__body">
+            <div class="header">
+              <p class="heading-4">Heading</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+
+            <div class="footer">
+              <button class="btn secondary-btn">
+                <span class="btn__icon material-icons"> favorite </span>
+                Wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="basic-shopping-card">
+          <img
+            class="basic-shopping-card__img"
+            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
+          />
+
+          <div class="basic-shopping-card__header">
+            <span class="discount small">30% Off</span>
+            <span class="icon material-icons"> favorite_border </span>
+          </div>
+
+          <div class="basic-shopping-card__body">
+            <div class="header">
+              <p class="brand">Levis</p>
+              <p class="description">Mens yellow tshirt</p>
+              <p class="price">Rs. 400</p>
+            </div>
+
+            <div class="footer">
+              <button class="btn primary-btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="small-horizontal-card">
+          <img
+            class="small-horizontal-card__img"
+            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
+          />
+
+          <div class="small-horizontal-card__body">
+            <div class="header">
+              <p class="brand">Levis</p>
+              <p class="description">Mens yellow tshirt</p>
+              <p class="price">Rs. 400</p>
+            </div>
+            <div class="footer">
+              <button class="btn secondary-btn icon-only-btn icon-only-btn-sm">
+                <span class="icon material-icons"> remove </span>
+              </button>
+              4
+              <button class="btn secondary-btn icon-only-btn icon-only-btn-sm">
+                <span class="icon material-icons"> add </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+      </div>
     </div>
   </body>
 </html>
