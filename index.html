@@ -38,7 +38,7 @@
           <span class="badge secondary-badge">24</span>
         </div>
 
-        <div class="icon-with-badge my-1">
+        <div class="icon-with-badge mh-1">
           <span class="icon-with-badge__icon material-icons-outlined">
             shopping_cart
           </span>
@@ -55,7 +55,7 @@
           let output = "<ul class='components-list'>";
 
           listOfComponents.forEach((component) => {
-            output += `<li class='component-list-item heading-4'>${component}</li>`;
+            output += `<li class='component-list-item heading-4'><a class='reset-link-styles' href='#badge'> ${component} </a></li>`;
           });
 
           output += "</li>";
@@ -210,7 +210,7 @@
 
         <hr />
 
-        <div class="component-outer-container">
+        <div id="badge" class="component-outer-container">
           <p class="heading-3 primary-txt-color bold my-1"># Badge</p>
 
           <div class="component-inner-container my-1">
@@ -235,7 +235,7 @@
         </div>
         <hr />
 
-        <div class="component-outer-container">
+        <div id="avatar" class="component-outer-container">
           <p class="heading-3 primary-txt-color bold my-1"># Avatar</p>
 
           <div class="component-inner-container my-1">
@@ -306,47 +306,102 @@
         </div>
 
         <hr />
+        <div id="icon-with-badge" class="component-outer-container">
+          <p class="heading-3 primary-txt-color bold my-1"># Icon with Badge</p>
 
-        <div class="icon-with-badge">
-          <span class="icon-with-badge__icon material-icons">
-            favorite_border
-          </span>
-          <span class="badge secondary-badge">24</span>
+          <div class="component-inner-container my-1">
+            <div class="d-flex align-items-center col-gap-1">
+              <div class="icon-with-badge">
+                <span class="icon-with-badge__icon material-icons">
+                  favorite_border
+                </span>
+                <span class="badge secondary-badge">24</span>
+              </div>
+
+              <div class="icon-with-badge">
+                <span class="icon-with-badge__icon material-icons">
+                  shopping_cart
+                </span>
+                <span class="badge secondary-badge">24</span>
+              </div>
+
+              <div class="icon-with-badge icon-with-badge-lg">
+                <span class="icon-with-badge__icon material-icons">
+                  shopping_cart
+                </span>
+                <span class="badge secondary-badge">24</span>
+              </div>
+            </div>
+
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522icon-with-badge%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-with-badge__icon%2520material-icons%2522%253E%250A%2520%2520%2520%2520favorite_border%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520secondary-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522icon-with-badge%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-with-badge__icon%2520material-icons%2522%253E%250A%2520%2520%2520%2520shopping_cart%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520secondary-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522icon-with-badge%2520icon-with-badge-lg%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-with-badge__icon%2520material-icons%2522%253E%250A%2520%2520%2520%2520shopping_cart%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520secondary-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 517px;
+                height: 454px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
         </div>
 
         <hr />
 
-        <div class="icon-with-badge">
-          <span class="icon-with-badge__icon material-icons">
-            shopping_cart
-          </span>
-          <span class="badge secondary-badge">24</span>
-        </div>
+        <div id="input" class="component-outer-container">
+          <p class="heading-3 primary-txt-color bold my-1"># Input Elements</p>
 
-        <div class="icon-with-badge icon-with-badge-lg">
-          <span class="icon-with-badge__icon material-icons">
-            shopping_cart
-          </span>
-          <span class="badge secondary-badge">24</span>
+          <div class="component-inner-container my-1">
+            <form>
+              <div class="input-container">
+                <input class="input-container__input-field" type="text" />
+                <label class="input-container__heading">Name</label>
+
+                <span class="input-container__icon material-icons">
+                  perm_identity
+                </span>
+              </div>
+
+              <div class="input-container">
+                <input class="input-container__input-field" type="text" />
+                <label class="input-container__heading">Password</label>
+              </div>
+            </form>
+
+            <iframe class="my-1"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-container__input-field%2522%2520type%253D%2522text%2522%2520%252F%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-container__heading%2522%253EName%253C%252Flabel%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-container__icon%2520material-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520perm_identity%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-container__input-field%2522%2520type%253D%2522text%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-container__heading%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+            style="width: 652px; height: 359px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </iframe>
+          </div>
         </div>
 
         <hr />
 
-        <form>
-          <div class="input-container">
-            <input class="input-container__input-field" type="text" />
-            <label class="input-container__heading">Name</label>
+        <div id="typography" class="component-outer-container">
+          <p class="heading-3 primary-txt-color bold my-1"># Typography</p>
 
-            <span class="input-container__icon material-icons">
-              perm_identity
-            </span>
-          </div>
+          <div class="component-inner-container my-1">
+              <p class="heading-1">Heading 1</p>
+              <p class="heading-2">Heading 2</p>
+              <p class="heading-3">Heading 3</p>
+              <p class="heading-4">Heading 4</p>
+              <p class="heading-5">Heading 4</p>
+              <p>Normal text</p>
+              <p class="small">Small text</p>
 
-          <div class="input-container">
-            <input class="input-container__input-field" type="text" />
-            <label class="input-container__heading">Password</label>
+              <iframe class="my-1"
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522heading-1%2522%253EHeading%25201%253C%252Fp%253E%2520%2520%2520%250A%253Cp%2520class%253D%2522heading-2%2522%253EHeading%25202%253C%252Fp%253E%250A%253Cp%2520class%253D%2522heading-3%2522%253EHeading%25203%253C%252Fp%253E%250A%253Cp%2520class%253D%2522heading-4%2522%253EHeading%25204%253C%252Fp%253E%250A%253Cp%2520class%253D%2522heading-5%2522%253EHeading%25204%253C%252Fp%253E%250A%253Cp%253ENormal%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522small%2522%253ESmall%2520text%253C%252Fp%253E"
+  style="width: 372px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
           </div>
-        </form>
+          </div>
 
         <hr />
 
@@ -375,15 +430,7 @@
 
         <hr />
 
-        <div class="typography">
-          <p class="heading-1">Heading 1</p>
-          <p class="heading-2">Heading 2</p>
-          <p class="heading-3">Heading 3</p>
-          <p class="heading-4">Heading 4</p>
-          <p class="heading-5">Heading 4</p>
-          <p>Normal text</p>
-          <p class="small">Small text</p>
-        </div>
+        
 
         <hr />
 
