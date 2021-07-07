@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar__left">
+        <p class="heading-2 navbar__logo">Brand</p>
+
+        <ul class="navbar__link-container">
+          <li><a class="navbar__link" href="/">Link 1</a></li>
+          <li><a class="navbar__link" href="/">Link 2</a></li>
+          <li><a class="navbar__link" href="/">Link 3</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar__right">
+        <div class="icon-with-badge">
+          <span class="icon-with-badge__icon material-icons">
+            favorite_border
+          </span>
+          <span class="badge secondary-badge">24</span>
+        </div>
+
+        <div class="icon-with-badge mh-1">
+          <span class="icon-with-badge__icon material-icons-outlined">
+            shopping_cart
+          </span>
+          <span class="badge secondary-badge">24</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="left-section">
+        <script>
+          listOfComponents = ["Button", "Card", "Alert", "Badge"];
+
+          let output = "<ul class='components-list'>";
+
+          listOfComponents.forEach((component) => {
+            output += `<li class='component-list-item heading-4'><a class='reset-link-styles' href='#badge'> ${component} </a></li>`;
+          });
+
+          output += "</li>";
+
+          document.write(output);
+        </script>
+      </div>
+
+      <div class="right-section">
+        <div class="component-outer-container" id="button">
+          <p class="heading-3 primary-txt-color bold"># Buttons</p>
+          <div class="component-inner-container mh-1">
+            <p class="heading-4 my-1">- Buttons with text only</p>
+
+            <div class="d-flex align-items-center col-gap-1">
+              <button class="btn primary-btn">Primary button</button>
+              <button class="btn secondary-btn">Secondary Button</button>
+            </div>
+
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn%2522%253EPrimary%2520button%253C%252Fbutton%253E%250A%2520%250A%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2522%253ESecondary%2520Button%253C%252Fbutton%253E%2520%2520"
+              class="my-1"
+              style="
+                width: 598px;
+                height: 131px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+
+            <p class="heading-4 my-1">- Buttons with icon and text</p>
+
+            <div class="d-flex align-items-center col-gap-1">
+              <button class="btn primary-btn">
+                <span class="btn__icon material-icons"> favorite </span>
+                Wishlist
+              </button>
+
+              <button class="btn secondary-btn">
+                <span class="btn__icon material-icons"> shopping_cart </span>
+                Shopping Cart
+              </button>
+            </div>
+
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520primary-btn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522btn__icon%2520material-icons%2522%253E%2520favorite%2520%253C%252Fspan%253E%250A%2520%2520Wishlist%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522btn__icon%2520material-icons%2522%253E%2520shopping_cart%2520%253C%252Fspan%253E%250A%2520%2520Shopping%2520Cart%250A%253C%252Fbutton%253E"
+              style="
+                width: 607px;
+                height: 245px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+
+            <p class="heading-4 my-1">- Buttons with icon only</p>
+
+            <div class="d-flex align-items-center col-gap-1 mh-1 my-1">
+              <button class="btn primary-btn icon-only-btn icon-only-btn-sm">
+                <span class="icon material-icons"> favorite </span>
+              </button>
+
+              <button class="btn secondary-btn icon-only-btn icon-only-btn-sm">
+                <span class="icon material-icons"> favorite </span>
+              </button>
+            </div>
+
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520icon-only-btn%2520icon-only-btn-sm%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2520material-icons%2522%253E%2520favorite%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2520icon-only-btn%2520icon-only-btn-sm%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2520material-icons%2522%253E%2520favorite%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+              style="
+                width: 625px;
+                height: 207px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+
+            <div class="d-flex align-items-center col-gap-1 mh-1 my-1">
+              <button class="btn primary-btn icon-only-btn">
+                <span class="icon material-icons"> shopping_cart </span>
+              </button>
+
+              <button class="btn secondary-btn icon-only-btn">
+                <span class="icon material-icons"> favorite </span>
+              </button>
+
+              <button class="btn primary-btn icon-only-btn floating-action-btn">
+                <span class="icon material-icons"> add </span>
+              </button>
+            </div>
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520icon-only-btn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2520material-icons%2522%253E%2520shopping_cart%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2520icon-only-btn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2520material-icons%2522%253E%2520favorite%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520icon-only-btn%2520floating-action-btn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2520material-icons%2522%253E%2520add%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+              style="
+                width: 634px;
+                height: 283px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="component-outer-container" id="alert">
+          <p class="heading-3 primary-txt-color bold my-1"># Alert</p>
+
+          <div class="component-inner-container">
+            <p class="heading-4 my-1">- Success Alert</p>
+
+            <div class="alert success-alert">
+              <span class="alert__icon material-icons"> check_circle </span>
+              Success - check it out!
+            </div>
+
+            <p class="heading-4 my-1">- Failure Alert</p>
+
+            <div class="alert danger-alert">
+              <span class="alert__icon material-icons"> error </span>
+              Error - check it out!
+            </div>
+
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520success-alert%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__icon%2520material-icons%2522%253E%2520check_circle%2520%253C%252Fspan%253E%250A%2520%2520Success%2520-%2520check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%250A%253Cdiv%2520class%253D%2522alert%2520danger-alert%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__icon%2520material-icons%2522%253E%2520error%2520%253C%252Fspan%253E%250A%2520%2520Error%2520-%2520check%2520it%2520out%21%250A%253C%252Fdiv%253E"
+              style="
+                width: 616px;
+                height: 264px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <div id="badge" class="component-outer-container">
+          <p class="heading-3 primary-txt-color bold my-1"># Badge</p>
+
+          <div class="component-inner-container my-1">
+            <span class="badge primary-badge mh-1">34</span>
+            <span class="badge secondary-badge">20</span>
+
+            <br />
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge%2520primary-badge%2522%253E34%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520secondary-badge%2522%253E20%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 544px;
+                height: 112px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr />
+
+        <div id="avatar" class="component-outer-container">
+          <p class="heading-3 primary-txt-color bold my-1"># Avatar</p>
+
+          <div class="component-inner-container my-1">
+            <p class="heading-4 my-1">- Avatar without badge</p>
+
+            <div class="d-flex align-items-center col-gap-1 mh-1 my-1">
+              <div class="avatar avatar-small">
+                <img
+                  src="https://www.w3schools.com/howto/img_avatar.png"
+                  alt="male"
+                />
+              </div>
+
+              <div class="avatar avatar-large">
+                <img
+                  src="https://www.w3schools.com/howto/img_avatar2.png"
+                  alt="male"
+                />
+              </div>
+            </div>
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-small%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fwww.w3schools.com%252Fhowto%252Fimg_avatar.png%2522%250A%2520%2520%2520%2520alt%253D%2522male%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-large%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fwww.w3schools.com%252Fhowto%252Fimg_avatar2.png%2522%250A%2520%2520%2520%2520alt%253D%2522male%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 553px;
+                height: 321px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+
+            <p class="heading-4 my-1">- Avatar with badge</p>
+
+            <div class="d-flex align-items-center col-gap-1 mh-1 my-1">
+              <div class="avatar">
+                <img
+                  src="https://www.w3schools.com/howto/img_avatar.png"
+                  alt="male"
+                />
+                <span class="avatar__badge badge secondary-badge">24</span>
+              </div>
+
+              <div class="avatar avatar-large">
+                <img
+                  src="https://www.w3schools.com/howto/img_avatar.png"
+                  alt="male"
+                />
+                <span class="avatar__badge badge secondary-badge">24</span>
+              </div>
+            </div>
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fwww.w3schools.com%252Fhowto%252Fimg_avatar.png%2522%250A%2520%2520%2520%2520alt%253D%2522male%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522avatar__badge%2520badge%2520secondary-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-large%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fwww.w3schools.com%252Fhowto%252Fimg_avatar.png%2522%250A%2520%2520%2520%2520alt%253D%2522male%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522avatar__badge%2520badge%2520secondary-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 589px;
+                height: 359px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+        <div id="icon-with-badge" class="component-outer-container">
+          <p class="heading-3 primary-txt-color bold my-1"># Icon with Badge</p>
+
+          <div class="component-inner-container my-1">
+            <div class="d-flex align-items-center col-gap-1">
+              <div class="icon-with-badge">
+                <span class="icon-with-badge__icon material-icons">
+                  favorite_border
+                </span>
+                <span class="badge secondary-badge">24</span>
+              </div>
+
+              <div class="icon-with-badge">
+                <span class="icon-with-badge__icon material-icons">
+                  shopping_cart
+                </span>
+                <span class="badge secondary-badge">24</span>
+              </div>
+
+              <div class="icon-with-badge icon-with-badge-lg">
+                <span class="icon-with-badge__icon material-icons">
+                  shopping_cart
+                </span>
+                <span class="badge secondary-badge">24</span>
+              </div>
+            </div>
+
+            <iframe
+              class="my-1"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522icon-with-badge%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-with-badge__icon%2520material-icons%2522%253E%250A%2520%2520%2520%2520favorite_border%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520secondary-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522icon-with-badge%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-with-badge__icon%2520material-icons%2522%253E%250A%2520%2520%2520%2520shopping_cart%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520secondary-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522icon-with-badge%2520icon-with-badge-lg%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-with-badge__icon%2520material-icons%2522%253E%250A%2520%2520%2520%2520shopping_cart%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520secondary-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 517px;
+                height: 454px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <div id="input" class="component-outer-container">
+          <p class="heading-3 primary-txt-color bold my-1"># Input Elements</p>
+
+          <div class="component-inner-container my-1">
+            <form>
+              <div class="input-container">
+                <input class="input-container__input-field" type="text" />
+                <label class="input-container__heading">Name</label>
+
+                <span class="input-container__icon material-icons">
+                  perm_identity
+                </span>
+              </div>
+
+              <div class="input-container">
+                <input class="input-container__input-field" type="text" />
+                <label class="input-container__heading">Password</label>
+              </div>
+            </form>
+
+            <iframe class="my-1"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-container__input-field%2522%2520type%253D%2522text%2522%2520%252F%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-container__heading%2522%253EName%253C%252Flabel%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-container__icon%2520material-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520perm_identity%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-container__input-field%2522%2520type%253D%2522text%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-container__heading%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+            style="width: 652px; height: 359px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <div id="typography" class="component-outer-container">
+          <p class="heading-3 primary-txt-color bold my-1"># Typography</p>
+
+          <div class="component-inner-container my-1">
+              <p class="heading-1">Heading 1</p>
+              <p class="heading-2">Heading 2</p>
+              <p class="heading-3">Heading 3</p>
+              <p class="heading-4">Heading 4</p>
+              <p class="heading-5">Heading 4</p>
+              <p>Normal text</p>
+              <p class="small">Small text</p>
+
+              <iframe class="my-1"
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522heading-1%2522%253EHeading%25201%253C%252Fp%253E%2520%2520%2520%250A%253Cp%2520class%253D%2522heading-2%2522%253EHeading%25202%253C%252Fp%253E%250A%253Cp%2520class%253D%2522heading-3%2522%253EHeading%25203%253C%252Fp%253E%250A%253Cp%2520class%253D%2522heading-4%2522%253EHeading%25204%253C%252Fp%253E%250A%253Cp%2520class%253D%2522heading-5%2522%253EHeading%25204%253C%252Fp%253E%250A%253Cp%253ENormal%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522small%2522%253ESmall%2520text%253C%252Fp%253E"
+  style="width: 372px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+          </div>
+          </div>
+
+        <hr />
+
+        <!-- <div class="list-of-shopping-cards"> -->
+
+        <div class="shopping-card">
+          <div class="shopping-card__img-container">
+            <img
+              class="shopping-card__img"
+              src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
+            />
+          </div>
+
+          <div class="shopping-card__header">
+            <span class="discount">30% Off</span>
+            <span class="icon material-icons"> favorite_border </span>
+          </div>
+
+          <div class="shopping-card__description">
+            <p class="heading bold">HRX Printed Round Neck T-Shirt</p>
+            <p class="price">Rs. 499 <span class="striked-price">500</span></p>
+          </div>
+        </div>
+
+        <!-- </div> -->
+
+        <hr />
+
+        
+
+        <hr />
+
+        <div class="basic-card basic-card-vertical">
+          <div class="basic-card__img-container">
+            <img
+              class="basic-card__img"
+              src="https://via.placeholder.com/800"
+              alt="img"
+            />
+          </div>
+
+          <div class="basic-card__body">
+            <div class="header">
+              <p class="heading-4">Heading</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="basic-card basic-card-horizontal">
+          <span class="basic-card__dismiss-icon material-icons"> clear </span>
+
+          <div class="basic-card__img-container">
+            <img
+              class="basic-card__img"
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="img"
+            />
+          </div>
+
+          <div class="basic-card__body">
+            <div class="header">
+              <p class="heading-4">Photo Frame</p>
+              <p class="heading-5">Rs. 3,999</p>
+            </div>
+
+            <div class="footer">
+              <button class="btn secondary-btn">
+                <span class="btn__icon material-icons"> favorite </span>
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="basic-card basic-card-vertical">
+          <span class="basic-card__dismiss-icon material-icons"> clear </span>
+
+          <div class="basic-card__img-container">
+            <img
+              class="basic-card__img"
+              src="https://via.placeholder.com/800"
+              alt="img"
+            />
+          </div>
+
+          <div class="basic-card__body">
+            <div class="header">
+              <p class="heading-4">Heading</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+
+            <div class="footer">
+              <button class="btn secondary-btn">
+                <span class="btn__icon material-icons"> favorite </span>
+                Wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="basic-shopping-card">
+          <img
+            class="basic-shopping-card__img"
+            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
+          />
+
+          <div class="basic-shopping-card__header">
+            <span class="discount small">30% Off</span>
+            <span class="icon material-icons"> favorite_border </span>
+          </div>
+
+          <div class="basic-shopping-card__body">
+            <div class="header">
+              <p class="brand">Levis</p>
+              <p class="description">Mens yellow tshirt</p>
+              <p class="price">Rs. 400</p>
+            </div>
+
+            <div class="footer">
+              <button class="btn primary-btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="small-horizontal-card">
+          <img
+            class="small-horizontal-card__img"
+            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg"
+          />
+
+          <div class="small-horizontal-card__body">
+            <div class="header">
+              <p class="brand">Levis</p>
+              <p class="description">Mens yellow tshirt</p>
+              <p class="price">Rs. 400</p>
+            </div>
+            <div class="footer">
+              <button class="btn secondary-btn icon-only-btn icon-only-btn-sm">
+                <span class="icon material-icons"> remove </span>
+              </button>
+              4
+              <button class="btn secondary-btn icon-only-btn icon-only-btn-sm">
+                <span class="icon material-icons"> add </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
